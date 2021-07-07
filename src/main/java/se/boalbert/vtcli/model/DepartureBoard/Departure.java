@@ -1,4 +1,4 @@
-package se.boalbert.vtcli.model;
+package se.boalbert.vtcli.model.DepartureBoard;
 
 import org.springframework.stereotype.Component;
 
@@ -21,12 +21,12 @@ public class Departure {
 	public String fgColor;
 	public String bgColor;
 	public String stroke;
-	public com.example.testvt1.model.JourneyDetailRef JourneyDetailRef;
+	public JourneyDetailRef JourneyDetailRef;
 
 	public Departure() {
 	}
 
-	public Departure(String name, String sname, String journeyNumber, String type, String stopid, String stop, String time, String date, String journeyid, String direction, String track, String fgColor, String bgColor, String stroke, List<com.example.testvt1.model.JourneyDetailRef> journeyDetailRef) {
+	public Departure(String name, String sname, String journeyNumber, String type, String stopid, String stop, String time, String date, String journeyid, String direction, String track, String fgColor, String bgColor, String stroke, JourneyDetailRef journeyDetailRef) {
 		this.name = name;
 		this.sname = sname;
 		this.journeyNumber = journeyNumber;
@@ -43,20 +43,26 @@ public class Departure {
 		this.stroke = stroke;
 	}
 
+//	@Override
+//	public String toString() {
+//		return "Departure{" +
+//				"name='" + name + '\'' +
+//				", sname='" + sname + '\'' +
+//				", journeyNumber='" + journeyNumber + '\'' +
+//				", type='" + type + '\'' +
+//				", stopid='" + stopid + '\'' +
+//				", stop='" + stop + '\'' +
+//				", time='" + time + '\'' +
+//				", date='" + date + '\'' +
+//				", journeyid='" + journeyid + '\'' +
+//				", direction='" + direction +
+//				'}';
+//	}
 	@Override
 	public String toString() {
-		return "Departure{" +
-				"name='" + name + '\'' +
-				", sname='" + sname + '\'' +
-				", journeyNumber='" + journeyNumber + '\'' +
-				", type='" + type + '\'' +
-				", stopid='" + stopid + '\'' +
-				", stop='" + stop + '\'' +
-				", time='" + time + '\'' +
-				", date='" + date + '\'' +
-				", journeyid='" + journeyid + '\'' +
-				", direction='" + direction +
-				'}';
+		return
+					stop + " " + direction + " - " + // 5 Kålltorp - 12:34, 2017-07-07
+					time + " " + date + " (" + track + ") \n";
 	}
 
 	public String getName() {

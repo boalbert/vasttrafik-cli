@@ -1,4 +1,4 @@
-package se.boalbert.vtcli.model;
+package se.boalbert.vtcli.model.DepartureBoard;
 
 import org.springframework.stereotype.Component;
 

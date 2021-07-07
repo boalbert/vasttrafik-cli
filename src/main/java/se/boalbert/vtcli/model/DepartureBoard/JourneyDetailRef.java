@@ -1,4 +1,4 @@
-package se.boalbert.vtcli.model;
+package se.boalbert.vtcli.model.DepartureBoard;
 
 public class JourneyDetailRef {
 	public String ref;

@@ -1,13 +1,13 @@
-package se.boalbert.vtcli.model;
+package se.boalbert.vtcli.model.DepartureBoard;
 
-public class ListDepartureBoard {
+public class BaseDepartureBoard {
 
 	public DepartureBoard DepartureBoard;
 
-	public ListDepartureBoard() {
+	public BaseDepartureBoard() {
 	}
 
-	public ListDepartureBoard(DepartureBoard departureBoard) {
+	public BaseDepartureBoard(DepartureBoard departureBoard) {
 		this.DepartureBoard = departureBoard;
 	}
 
